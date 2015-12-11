@@ -11,6 +11,7 @@ Project
 |   bower.json
 |   bower.rc
 |   gulpfile.babel.js
+|   requirements.txt
 +---node_modules
 +---app
 |   |   app.py
@@ -26,7 +27,10 @@ Project
 |   |   |       main.js
 |   |   +---images
 |   |   +---bower_components
+|   +---lib
+|   |   ...
 +---dist
+    ...
 ```
 
 ### Set up
