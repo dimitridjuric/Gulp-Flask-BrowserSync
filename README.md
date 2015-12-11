@@ -3,7 +3,7 @@
 This is a web app skeleton using Gulp, Flask and BrowserSync.
 It is based on the Yeoman webapp contructor, a skeleton (https://github.com/pebreo/gulp-browsersync-flask) and and article on realpython.com (https://realpython.com/blog/python/the-ultimate-flask-front-end/).
 
-The project directory is:
+The project structure is:
 ```
 Project
 |   README.md
@@ -20,10 +20,10 @@ Project
 |   +---static
 |   |   |   favocon.ico
 |   |   +---styles
-|   |   |   |   main.css
-|   |   |   |   main.scss
+|   |   |       main.css
+|   |   |       main.scss
 |   |   +---scripts
-|   |   |   |   main.js
+|   |   |       main.js
 |   |   +---images
 |   |   +---bower_components
 +---dist
@@ -31,17 +31,15 @@ Project
 
 ### Set up
 
-You need NPM, Python and pip.
-clone the project skeleton.
-
-cd into the project folder, then
+You will need NPM, Python and pip installed.
+Clone the project skeleton and cd into the project folder, then
 to install Flask and other python packages:
 
 `pip install -r requirements.txt [-f app/lib]`
 
-(-f app/lib might be necessary if you want to have that on you server/google app engine)
+(-f app/lib might be necessary if you want to have the packages on you server/google app engine)
 
-`npm install` to install the node modules, see list in the packages.json file 
+`npm install` to install the node modules, see list in the `packages.json` file 
 
 and finally `bower install`
 
