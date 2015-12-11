@@ -1,0 +1,136 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "app/static/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import url(https://fonts.googleapis.com/css?family=Cousine);
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Cousine', Consolas, monospace;
+    font-size: 1.6em;
+    padding: 15px; 
+    //padding-top: 25px;
+    height: 100%;
+    color: #000000;
+}
+
+a {
+    color: #666666;
+}
+
+a:hover {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+p {
+  a {
+      color: #888888;
+  }
+}
+
+//images should be centered in their container
+.container-fluid {
+    height: 100%;  
+}
+
+.container {
+    height:100%;
+    //background-color: #bbb;
+}
+
+.top-row {
+    //margin-bottom: 1em;
+    //background-color: #abc;
+    .top-nav {
+       margin-top: 12px;
+    }
+    .brand {
+    font-size: 1.4em;
+    
+    }
+}
+
+.main-row {
+    margin-top: 1em;
+    height: 90%;
+    //background-color: #cba;
+    .sidebar {
+      .nav-pills {
+        margin: 0px;      
+}
+    }
+    .content {
+        height:100%;
+        //background-color: #bcd;
+        figure {
+            height:100%;
+            //background-color: red;
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            };
+            
+        }    
+    }
+    .thumbnail {
+        border: none;
+    }
+}
+
+//hide next image in gallery and show current
+#nextImage {
+    display: none
+}
+
+.message {
+    position: absolute;
+    opacity: 0.5;
+    height: 9em;
+    color: #fff;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.active {
+    background-color: #eee;
+}
+
+//make images full width on phones
+//maybe with a negative padding of 15px
+@media screen and (max-width: 700px) {
+    body {
+        padding-left: 0px;
+        padding-right:0px;
+    }
+    figure {
+        margin-left: -15px;
+        margin-right: -15px;
+        //margin-top:15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .brand {
+      padding-left: .6em;
+      font-size: 1.2em;
+    }
+}
+
+* {
+  border-radius: 0 !important;
+}

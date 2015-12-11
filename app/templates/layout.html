@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gulp Flask BrowserSync - {% block title %}{% endblock %}</title>
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="favicon" href="favicon.ico">
+    <!-- build:css static/styles/vendor.css -->
+
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css static/styles/main.css -->
+    <link rel="stylesheet" href="static/styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        
+        <!-- page container -->
+        <div class="container">
+            
+            <!-- brand [and top-nav] -->
+            <div class="row top-row">
+                <div class="col-xs-4 col-sm-4">
+                    <a href="{{ url_for('index') }}">
+                        <span class="h2">Gulp Flask BrowserSync Skeleton</span>
+                    </a>
+                </div>
+                <nav class="col-xs-8 col-sm-8 hidden-md hidden-lg text-right top-nav" role="navigation">
+                    <a href=#>One</a>
+                    <a href=#>Two</a>
+                    <a href=#>Three</a>                    
+                </nav>
+            </div>
+            
+            <!-- [side-nav and] content -->
+            <div class="row main-row">
+                
+                <!-- sidebar -->
+                <nav class="hidden-xs hidden-sm col-md-2">
+                    
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="nav"><a href=#>One</a></li>
+                        <li class="nav"><a href=#>Two</a></li>
+                        <li class="nav"><a href=#>Three</a></li>
+                        <hr>
+                        <li class="nav"><a href=#>Four</a>
+                    </ul>
+                </nav>
+                
+                <!-- content -->
+                {% block content %}{% endblock %}
+                
+            </div>
+        </div>    
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    
+    <!-- build:js static/scripts/vendor.js -->
+    <script src="static/scripts/picturefill.min.js"></script>
+    <!-- bower:js -->
+    <script src="/static/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+
+    <!-- endbuild -->
+    
+    <!-- build:js static/scripts/main.js -->
+    <script src="/static/scripts/main.js"></script>
+    <!-- endbuild -->
+    {% block script %}{% endblock %}
+  </body>
+</html>
